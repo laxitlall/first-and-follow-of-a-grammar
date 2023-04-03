@@ -108,9 +108,9 @@ int main()
   }
   for(auto i = first.begin();i != first.end(); i++)
   { set<char> temp = i->second;
-    cout << i->first << " : ";
+    cout << "FIRST(" << i->first << ") :  ";
     for(auto str : temp)
-    { cout << str << ",";
+    { cout << str << " ";
     }
     cout << endl;
   }
@@ -121,9 +121,9 @@ int main()
   }
   for(auto i = follow.begin();i != follow.end(); i++)
   { set<char> temp = i->second;
-    cout << i->first << " : ";
+    cout << "FOLLOW(" << i->first << ") :  ";
     for(auto str : temp)
-    { cout << str << ",";
+    { cout << str << " ";
     }
     cout << endl;
   }
